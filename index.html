@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador reto 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header class="logo">
+        <img class="logo-imagen" src="img/Logo.png" alt="Logo">
+        <h1 class="titulo-principal">Encriptador de mensajes</h1>
+    </header>
+
+    <div class="contenedor-principal">
+        
+        <section class="seccion-izquierda">
+            <input id="input-mensaje" class="mensaje-input" type="text" placeholder="Ingrese el texto aquí">
+        </section>
+
+        <section class="seccion-derecha">
+            <img src="img/chico.png" alt="Chico mirando un diamante" id="chico-img">
+
+            <h1 id="texto-info">Ningun mensaje fue encontrado</h1>
+            <textarea name="" id="texto-msg-resultado" cols="30" rows="10">Ingrese el texto que desees encriptar o desencriptar </textarea>
+            <button id="boton-copiar" type="button" onclick="copy()" >!Copiar¡</button>
+        </section>
+
+        <div class="caja-botones">
+            <p><span class="exclamacion">&#x0021;</span> Solo minusculas y sin acentos</p>
+            
+            <button type="button" id="boton-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="boton-desencriptar" onclick="desEncriptar()">Desencriptar</button>
+        </div>
+    </div>
+    <footer> <h1>Challenge #1 Encriptador By Elberth</h1></footer> 
+</body>
+</html>
